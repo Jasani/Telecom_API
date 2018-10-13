@@ -48,7 +48,7 @@ public class CustomerMappingController {
 	//Example URL to be used-http://localhost:8080/customerMapping/phoneNumber
 	
 	@RequestMapping(method=RequestMethod.PUT,value="customerMapping/{phoneNumber}")
-	public String deactivateCustomerMapping(@PathVariable Long phoneNumber)
+	public String activateCustomerMapping(@PathVariable Long phoneNumber)
 	{
 		
 		char flag=customerMappingservice.activatePhoneNumber(phoneNumber);
